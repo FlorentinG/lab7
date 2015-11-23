@@ -36,12 +36,14 @@ end
 function [condA] = estCond(A,b,n)
 %Estimates the condition number of the given A with variation on b
 
-deltaB = zeros(n,1);
-deltaB(ceil(n*rand(n,1))) = (rand(n,1)+1)*eps;
+condA = 0;
+for j=1:1000    
+    deltaB = eps*(rand(n,1)+1);
 
-x = A\b;
-y = A\(b+deltaB);
+    x = A\b;
+    y = A\(b+deltaB);
 
-condA = norm(b)*norm(x-y)/norm(deltaB)/norm(x);
+    condA = max(condA,norm(b)*norm(x-y)/(norm(deltaB)*norm(x)));
+end
 end
 
