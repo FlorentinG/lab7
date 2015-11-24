@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.6.23)  24 NOV 2015 11:37
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.6.23)  24 NOV 2015 14:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1192,7 +1192,11 @@ Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 340.
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2013/08/26 1.5b listings language file
 )
-(./lab7report.aux)
+(./lab7report.aux
+
+LaTeX Warning: Label `lsp' multiply defined.
+
+)
 \openout1 = `lab7report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 87.
@@ -1299,53 +1303,107 @@ LaTeX Font Info:    Try loading font information for U+rsfs on input line 91.
 
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-) (./stableFact.tex)
-(./leastSquare.tex [1
+) (./stableFact.tex
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 4.
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}])
+(/usr/share/texmf/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Package epstopdf Info: Source file: <qrPlot.eps>
+(epstopdf)                    date: 2015-11-24 13:28:25
+(epstopdf)                    size: 23745 bytes
+(epstopdf)             Output file: <qrPlot-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-11-24 13:35:59
+(epstopdf)                    size: 8258 bytes
+(epstopdf)             Command: <repstopdf --outfile=qrPlot-eps-converted-to.pd
+f qrPlot.eps>
+(epstopdf)             \includegraphics on input line 51.
+Package epstopdf Info: Output file is already uptodate.
+
+<qrPlot-eps-converted-to.pdf, id=19, 425.59pt x 319.1925pt>
+File: qrPlot-eps-converted-to.pdf Graphic file (type pdf)
+
+<use qrPlot-eps-converted-to.pdf>
+Package pdftex.def Info: qrPlot-eps-converted-to.pdf used on input line 51.
+(pdftex.def)             Requested size: 297.91095pt x 223.43321pt.
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}pdfTeX warning (ext4): desti
+nation with the same identifier (name{table.1}) has been already used, duplicat
+e ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.57 \FloatBarrier
+                  ]) (./leastSquare.tex [2pdfTeX warning (ext4): destination wi
+th the same identifier (name{figure.1}) has been already used, duplicate ignore
+d
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.31 \begin{center}
+                    <./qrPlot-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <lsp.eps>
+(epstopdf)                    date: 2015-11-24 11:26:48
+(epstopdf)                    size: 77000 bytes
+(epstopdf)             Output file: <lsp-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-11-24 12:19:14
+(epstopdf)                    size: 16694 bytes
+(epstopdf)             Command: <repstopdf --outfile=lsp-eps-converted-to.pdf l
+sp.eps>
+(epstopdf)             \includegraphics on input line 103.
+Package epstopdf Info: Output file is already uptodate.
+
+<lsp-eps-converted-to.pdf, id=60, 425.59pt x 319.1925pt>
+File: lsp-eps-converted-to.pdf Graphic file (type pdf)
+
+<use lsp-eps-converted-to.pdf>
+Package pdftex.def Info: lsp-eps-converted-to.pdf used on input line 103.
+(pdftex.def)             Requested size: 297.91095pt x 223.43321pt.
+ [3])
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 114.
-
-(./qrFact.m
+ (./qrFact.m
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 1.
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 1.
- (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [2pdfTeX warning (ext4): destination with the same identifier (name{figure.1}
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 12.
+
+(/usr/share/texmf/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+) [4pdfTeX warning (ext4): destination with the same identifier (name{figure.2}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.5 %
-     [A,b] = illposed(8);]
-LaTeX Font Info:    Try loading font information for TS1+lmr on input line 9.
- (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
-File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)) (./lsp.m
-[3])
+l.38     xlabel(
+                'rank(E)'); <./lsp-eps-converted-to.pdf>]) (./lsp.m)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 118.
- [4]
+ [5]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 118.
- (./lab7report.aux)
+
+(./lab7report.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 118.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 118.
 Package rerunfilecheck Info: File `lab7report.out' has not changed.
 (rerunfilecheck)             Checksum: 261B1458A82F3CAB8FB573E495373256;175.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 118.
  ) 
 Here is how much of TeX's memory you used:
- 20779 strings out of 493304
- 341794 string characters out of 6139871
- 661644 words of memory out of 5000000
- 23656 multiletter control sequences out of 15000+600000
- 50190 words of font info for 56 fonts, out of 8000000 for 9000
+ 20815 strings out of 493304
+ 342356 string characters out of 6139871
+ 644644 words of memory out of 5000000
+ 23677 multiletter control sequences out of 15000+600000
+ 50509 words of font info for 57 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  56i,11n,72p,477b,2365s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texmf/fonts/enc/d
-vips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/shar
-e/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/l
-m-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texmf/f
+vips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/shar
+e/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ma
+thex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/share/texmf/f
 onts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.
 pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts
 /type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb>
@@ -1354,12 +1412,13 @@ pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts
 are/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/
 lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/
 fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.
-pfb></usr/share/texmf/fonts/type1/public/lm/lmtt8.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on lab7report.pdf (4 pages, 220489 bytes).
+pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/
+type1/public/lm/lmtt8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/symbols/msbm10.pfb>
+Output written on lab7report.pdf (5 pages, 289124 bytes).
 PDF statistics:
- 219 PDF objects out of 1000 (max. 8388607)
- 196 compressed objects within 2 object streams
- 93 named destinations out of 1000 (max. 500000)
- 37 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 259 PDF objects out of 1000 (max. 8388607)
+ 227 compressed objects within 3 object streams
+ 105 named destinations out of 1000 (max. 500000)
+ 47 words of extra memory for PDF output out of 10000 (max. 10000000)
 

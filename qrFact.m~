@@ -1,4 +1,4 @@
-function [table, condA, estimCondA] = qrFact()
+function [table] = qrFact(A,b)
 % qrFact 
 %
 % Authors : Weicker David & Goyens Florentin
@@ -10,8 +10,8 @@ table = zeros(4,5);
 
 [q,r,p] = qr(A);
 d = q'*b;
-condA = cond(A)
-estimCondA = estimationCond(A,b,8)
+cond(A)
+estimationCond(A)
 rank = 8:-1:5;
 for i=1:4
     % compute norm(E)
