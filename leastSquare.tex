@@ -20,10 +20,11 @@ $$A=QR$$
 With $Q$ an orthogonal matrix and $R$ upper triangular. Indeed, to minimize the norm of the residual, we know that we have to solve the normal equations :
 $$A^TAx=A^Tb$$
 
-But using QR-factorization allows us to say (the proof that be found in the course notes) : 
+But using QR-factorization allows us to say (the proof can be found in the course notes) : 
 $$Rx=Q^Tb$$
 
-The Matlab code used to solve the problem can be found at the end of this report.
+The Matlab code used to solve the problem can be found at the end of this report. We define the residual as $\text{res } = A\textbf{x}-b$ where $\textbf{x}$ is the solution of the normal equations.
+
 
 For $n=1$, here are the values obtained for the parameters :
 
@@ -42,7 +43,7 @@ $b_1$ & 2.3581 \\
 \end{center}
 
 And the computed norm of the residual is :
-$$||res(n=1)||_2=15.2036$$
+$$||\text{res }(n=1)||_2=15.2036$$
 
 For $n=2$, the parameters are the following : 
 
@@ -65,7 +66,7 @@ $b_2$ & -0.0345\\
 \end{center}
 
 And the norm of the residual is :
-$$||res(n=2)||_2=11.3936$$
+$$||\text{res }(n=2)||_2=11.3936$$
 
 And finally, for $n=3$, these are the parameters : 
 
@@ -92,15 +93,14 @@ $b_3$ & -0.0568\\
 \end{center}
 
 And the norm of the residual is :
-$$||res(n=3)||_2=11.2972$$
-
+$$||\text{res }(n=3)||_2=11.2972$$
 It is important to note that the norm of the residual decreases as we increase $n$. That is to be expected since when we increase $n$ by one, we allow two new degrees of freedom. Thus, it is not possible to obtain a "worse" residual with a higher $n$. In the worst case scenario, the two new basis functions do not increase the quality of the fitting and then the corresponding coefficients would be zero. The residuals would then be equal.
 
-Figure \ref{lsp} shows the fitting for $n=3$. We can see that it is relatively good. The $'x'$ are the data points and the red curve is the fitting.
+Figure \ref{lsp} shows the fitting for $n=3$. We can see that it is relatively good. The $'\times'$ are the data points and the red curve is the fitting.
 
 \begin{figure}
 \begin{center}
-\includegraphics[scale=0.5]{lsp.eps}
+%\includegraphics[scale=0.5]{lsp.eps}
 \caption{Fitting of the data for $n=3$}
 \label{lsp}
 \end{center}
