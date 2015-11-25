@@ -1,5 +1,12 @@
 function [table, condA, estimCondA] = qrFact()
-% qrFact 
+% qrFact Solve the task one for the lab7 that is the analysis of the
+% solution for an ill-posed system with qr-factorization
+%
+% table(:,1) is norm(E) for rank = [8,7,6,5]
+% table(:,2) is norm(res) for rank = [8,7,6,5]
+% table(:,3) is cond(R11) for rank = [8,7,6,5]
+% table(:,4) is estimationCond(R11) for rank = [8,7,6,5]
+% table(:,5) is norm(xhat) for rank = [8,7,6,5]
 %
 % Authors : Weicker David & Goyens Florentin
 close all;
@@ -10,8 +17,8 @@ table = zeros(4,5);
 
 [q,r,p] = qr(A);
 d = q'*b;
-condA = cond(A)
-estimCondA = estimationCond(A,b,8)
+condA = cond(A);
+estimCondA = estimationCond(A,b,8);
 rank = 8:-1:5;
 for i=1:4
     % compute norm(E)
